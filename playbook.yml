@@ -1,0 +1,18 @@
+- hosts: all
+
+  tasks:
+
+    - name: Install python3-docker
+      apt:
+        pkg:
+          - python3-docker
+        state: present
+        update_cache: yes
+      become: yes
+
+    - name: Start a container
+      community.docker.docker_container:
+        name: app
+        image: redmine
+        ports:
+          - "80:3000"
