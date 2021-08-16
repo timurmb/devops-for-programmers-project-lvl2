@@ -4,7 +4,10 @@ install-collections-roles:
 	ansible-galaxy install -r requirements.yml
 
 deploy:
-	ansible-playbook playbook.yml -i inventory.ini
+	ansible-playbook --ask-vault-pass playbook.yml -i inventory.ini
 
 ping:
 	ansible all -i inventory.ini -m ping
+
+encrypt:
+	ansible-vault encrypt group_vars/webservers/vault.yml
