@@ -22,3 +22,9 @@
           REDMINE_DB_USERNAME: "{{DB_USERNAME}}"
           REDMINE_DB_PASSWORD: "{{DB_PASSWORD}}"
           REDMINE_DB_PORT: "{{DB_PORT}}"
+
+    - name: Run datadog
+      include_role:
+        name: datadog.datadog
+        apply:
+          become: yes

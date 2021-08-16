@@ -2,3 +2,13 @@ DB_POSTGRES: db-postgresql-fra1-67998-do-user-9557990-0.b.db.ondigitalocean.com
 DB_DATABASE: defaultdb
 DB_USERNAME: doadmin
 DB_PORT: '25060'
+
+datadog_site: "datadoghq.eu"
+datadog_checks:
+  http_check:
+    init_config:
+    instances:
+      - name: app health check status
+        url: http://localhost
+        timeout: 5
+        method: GET

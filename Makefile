@@ -11,3 +11,5 @@ ping:
 
 encrypt:
 	ansible-vault encrypt group_vars/webservers/vault.yml
+decrypt:
+	ansible-vault decrypt group_vars/webservers/vault.yml
