@@ -2,7 +2,6 @@
 
   roles:
     - geerlingguy.pip
-    - datadog.datadog
 
   tasks:
 
@@ -19,8 +18,8 @@
           REDMINE_DB_PASSWORD: "{{DB_PASSWORD}}"
           REDMINE_DB_PORT: "{{DB_PORT}}"
 
-    # - name: Run datadog
-    #   include_role:
-    #     name: datadog.datadog
-    #     apply:
-    #       become: yes
+    - name: Run datadog
+      include_role:
+        name: datadog.datadog
+        apply:
+          become: yes
