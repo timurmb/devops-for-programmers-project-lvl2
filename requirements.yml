@@ -4,3 +4,4 @@ collections:
 
 roles:
   - datadog.datadog
+  - geerlingguy.pip
