@@ -1,3 +1,7 @@
+pip_install_packages:
+  - name: docker
+  - name: awscli
+
 DB_POSTGRES: db-postgresql-fra1-67998-do-user-9557990-0.b.db.ondigitalocean.com
 DB_DATABASE: defaultdb
 DB_USERNAME: doadmin

@@ -1,14 +1,9 @@
 - hosts: all
 
-  tasks:
+  roles:
+    - geerlingguy.pip
 
-    - name: Install python3-docker
-      apt:
-        pkg:
-          - python3-docker
-        state: present
-        update_cache: yes
-      become: yes
+  tasks:
 
     - name: Start a container
       community.docker.docker_container:
