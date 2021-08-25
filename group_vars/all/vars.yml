@@ -16,4 +16,5 @@ datadog_checks:
         url: http://localhost
         timeout: 5
         method: GET
-datadog_disable_untracked_checks: false
+# datadog_disable_untracked_checks: false
+datadog_agent_major_version: 6
