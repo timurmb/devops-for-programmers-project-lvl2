@@ -17,4 +17,4 @@ datadog_checks:
         timeout: 5
         method: GET
 # datadog_disable_untracked_checks: false
-datadog_agent_major_version: 6
+datadog_agent_major_version: 5
