@@ -18,4 +18,4 @@ datadog_checks:
         method: GET
 # datadog_disable_untracked_checks: false
 # datadog_agent_major_version: 5
-datadog_agent_version: 7.16.0
+datadog_agent_version: "7.16.0"
