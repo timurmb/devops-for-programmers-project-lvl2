@@ -19,3 +19,4 @@ datadog_checks:
 # datadog_disable_untracked_checks: false
 # datadog_agent_major_version: 5
 # datadog_agent_version: 1:7.16.0-1
+datadog_enabled: false
